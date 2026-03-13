@@ -100,11 +100,8 @@ if submit:
     else:
         st.session_state.history.append(guess_int)
 
-        if st.session_state.attempts % 2 == 0:
-            secret = str(st.session_state.secret)
-        else:
-            # FIX: removed string conversion bug that caused type mismatch
-            secret = st.session_state.secret
+        # FIX: removed string conversion bug that caused incorrect comparisons
+        secret = st.session_state.secret
 
         outcome, message = check_guess(guess_int, secret)
 

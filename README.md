@@ -25,13 +25,18 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- ## Document Your Experience
+
+-This project is a number guessing game built with Streamlit. When I first ran the game, I discovered several bugs including incorrect hint messages, a string comparison bug, and a difficulty setting where Hard mode was easier than Normal mode.
+
+-I used GitHub Copilot and ChatGPT to help analyze the code and understand the problems. I moved the game logic into `logic_utils.py`, fixed the hint direction, corrected the difficulty range, and removed the string comparison bug.
+
+-I also created pytest tests to verify the game logic. After running pytest and confirming all tests passed, the game now behaves correctly.
 
 ## 📸 Demo
 
 - [ ] [Insert a screenshot of your fixed, winning game here]
+![alt text](image.png)
 
 ## 🚀 Stretch Features
 
