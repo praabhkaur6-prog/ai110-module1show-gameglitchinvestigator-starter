@@ -49,3 +49,7 @@ I learned that Streamlit reruns the entire script every time the user interacts 
 ---
 
 One habit I want to reuse in future projects is writing tests to verify that my code works correctly after making changes. This project also showed me that AI tools can be helpful for understanding code and suggesting fixes, but their suggestions should always be reviewed carefully. In the future, I will test AI-generated solutions more thoroughly before accepting them. This project changed the way I think about AI-generated code because it showed that AI can help with debugging but still requires human judgment and verification.
+
+## AI Model Comparison (Bonus)
+
+For one of the bugs involving the secret number being converted to a string on even-numbered attempts, I compared explanations from GitHub Copilot and ChatGPT. Copilot identified that the comparison between an integer guess and a string secret caused incorrect behavior, but its explanation focused mainly on the exception block. ChatGPT provided a clearer explanation about how Python compares different data types and why the equality check failed. I found ChatGPT’s explanation easier to understand because it clearly described the type mismatch and its effect on the win condition.
