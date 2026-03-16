@@ -1,6 +1,6 @@
 def get_range_for_difficulty(difficulty: str):
     """Return the guessing range based on difficulty level."""
-def get_range_for_difficulty(difficulty: str):
+
     # FIX: Hard mode now has a larger range so it is actually harder
 
     if difficulty == "Easy":
@@ -16,7 +16,6 @@ def get_range_for_difficulty(difficulty: str):
 
 def parse_guess(raw: str):
     """Convert user input into an integer guess."""
-def parse_guess(raw: str):
 
     if raw is None or raw == "":
         return False, None, "Enter a guess."
@@ -33,7 +32,7 @@ def parse_guess(raw: str):
 
 def check_guess(guess, secret):
     """Compare guess with secret number and return result."""
-def check_guess(guess, secret):
+
     # FIX: Corrected hint direction after using Codex to review logic
     if guess == secret:
         return "Win", "🎉 Correct!"
@@ -45,7 +44,6 @@ def check_guess(guess, secret):
 
 def update_score(current_score: int, outcome: str, attempt_number: int):
     """Update player score after each guess."""
-def update_score(current_score: int, outcome: str, attempt_number: int):
 
     if outcome == "Win":
         points = 100 - 10 * (attempt_number + 1)
